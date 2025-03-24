@@ -1,32 +1,28 @@
 #include "Game.h"
 #include <iostream>
+using namespace std;
 
-bool Game::Init()
-{
+bool Game::Init(){
     return true;
 }
 
-void Game::Input()
-{
-    std::cout << "input\n";
+void Game::Input(){
+    cout << "input\n";
 }
 
-void Game::Update()
-{
-    std::cout << "update\n";
+void Game::Update(){
+    cout << "update\n";
 }
 
-void Game::Draw()
-{
-    std::cout << "draw\n";
+void Game::Draw(){
+    cout << "draw\n";
 }
 
 Game::Game() : isRunning(true) {}
 
 Game::~Game() {}
 
-void Game::Run()
-{
+void Game::Run(){
     if (!Init())
         isRunning = false;
 
@@ -35,6 +31,7 @@ void Game::Run()
         Input();
         Update();
         Draw();
-        std::cout << "run\n";
     }
+    cout << "run\n";
 }
+

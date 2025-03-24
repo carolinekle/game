@@ -2,11 +2,9 @@
 #include <iostream>
 
 
-class Game
-{
+class Game{
     private:
     bool isRunning;
-    
         bool Init();
         void Input();
         void Update();
